@@ -1,0 +1,1 @@
+# operationalizing-ai-weekly-projects
