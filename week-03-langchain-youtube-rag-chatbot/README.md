@@ -15,7 +15,7 @@
 
 ## 🚀 Live Demo
 
-**Try it now:** [XYZ](XYZ)
+**Try it now:** [Youtube Rag App](https://youtube-rag-app.streamlit.app))
 
 ## 🛠️ How It Works
 
@@ -28,7 +28,7 @@
 ## 📱 Usage
 
 ### Getting Started
-1. Visit the [live app](XYZ)
+1. Visit the [live app](https://youtube-rag-app.streamlit.app)
 2. Enter a YouTube URL or video ID in the sidebar
 3. Click "🚀 Process Video" 
 4. Start asking questions about the video!
