@@ -15,7 +15,7 @@
 
 ## 🚀 Live Demo
 
-**Try it now:** [Youtube Rag App](https://youtube-rag-app.streamlit.app))
+**Try it now:** [Youtube Rag App](https://youtube-rag-app.streamlit.app)
 
 ## 🛠️ How It Works
 
