@@ -13,7 +13,7 @@ from rag import retrieve_docs, format_docs
 import os
 
 MODEL = "gpt-4o-mini"
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 class State(TypedDict):
     messages: Annotated[List[BaseMessage], add_messages]

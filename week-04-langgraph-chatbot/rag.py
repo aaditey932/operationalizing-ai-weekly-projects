@@ -3,8 +3,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
+import streamlit as st
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
 sample_docs = [

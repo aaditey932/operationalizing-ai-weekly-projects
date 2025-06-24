@@ -125,5 +125,5 @@ python app.py
 
 **Easy Launcher:**
 ```bash
-python run_streamlit.py
+python streamlit run week-04-langgraph-chatbot/app.py
 ```
