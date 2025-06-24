@@ -8,11 +8,12 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import MemorySaver
-
-import config
 from tools import tools
 from rag import retrieve_docs, format_docs
+import os
 
+MODEL = "gpt-4o-mini"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 class State(TypedDict):
     messages: Annotated[List[BaseMessage], add_messages]
@@ -21,7 +22,7 @@ class State(TypedDict):
 @st.cache_resource
 def initialize_llm():
     """Initialize LLM with tools (cached for performance)."""
-    llm = ChatOpenAI(model=config.MODEL, api_key=config.OPENAI_API_KEY)
+    llm = ChatOpenAI(model=MODEL, api_key=OPENAI_API_KEY)
     return llm.bind_tools(tools)
 
 
