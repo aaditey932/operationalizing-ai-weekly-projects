@@ -2,6 +2,12 @@
 
 A basic LangGraph application with tools, RAG, and memory - now with a beautiful Streamlit web interface!
 
+## 🚀 Live Demo
+
+**Try it now:** [https://langgraph-chatbot-app.streamlit.app](https://langgraph-chatbot-app.streamlit.app)
+
+The app is deployed and ready to use! No setup required - just click and start chatting.
+
 ## Files
 
 - `streamlit_app.py` - Main Streamlit web interface
@@ -56,13 +62,15 @@ A basic LangGraph application with tools, RAG, and memory - now with a beautiful
 
 ## Usage Examples
 
-**In the Streamlit UI:**
+**🌐 Try the Live Demo:**
+Visit [https://langgraph-chatbot-app.streamlit.app](https://langgraph-chatbot-app.streamlit.app) and:
 - Click example buttons in the sidebar
 - Type in the chat input at the bottom
 - See responses with thinking indicators
 - Clear history with the sidebar button
 
-**Programmatic usage:**
+**💻 Local Development:**
+**💻 Local Development:**
 ```python
 from streamlit_app import chat_with_assistant
 
@@ -76,6 +84,18 @@ response = chat_with_assistant("What is LangGraph?")
 response = chat_with_assistant("My name is Alice", thread_id="user1")
 response = chat_with_assistant("What's my name?", thread_id="user1")
 ```
+
+## 🚀 Deployment
+
+The app is deployed on **Streamlit Cloud** at:
+**[https://langgraph-chatbot-app.streamlit.app](https://langgraph-chatbot-app.streamlit.app)**
+
+### Deployment Features:
+- 🌍 **Public Access**: No login required
+- ⚡ **Auto-scaling**: Handles multiple users
+- 🔄 **Auto-updates**: Synced with code changes  
+- 💾 **Session Persistence**: Each user gets their own memory
+- 🛡️ **Secure**: API keys handled through Streamlit secrets
 
 ## Streamlit Features
 
@@ -125,5 +145,5 @@ python app.py
 
 **Easy Launcher:**
 ```bash
-python streamlit run week-04-langgraph-chatbot/app.py
+python run_streamlit.py
 ```
