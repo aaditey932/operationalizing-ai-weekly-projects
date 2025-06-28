@@ -3,6 +3,8 @@ from pydantic import BaseModel
 from agent import DoctorAppointmentAgent
 from langchain_core.messages import HumanMessage
 import os
+import uuid
+import streamlit as st
 
 os.environ.pop("SSL_CERT_FILE", None)
 
@@ -13,25 +15,26 @@ app = FastAPI()
 class UserQuery(BaseModel):
     id_number: int
     messages: str
+    thread_id : str
 
 agent = DoctorAppointmentAgent()
 
 @app.post("/execute")
 def execute_agent(user_input: UserQuery):
-    app_graph = agent.workflow()
     
     # Prepare agent state as expected by the workflow
-    input = [
-        HumanMessage(content=user_input.messages)
-    ]
-    query_data = {
+    input = [HumanMessage(content=user_input.messages)]
+
+    state = {
         "messages": input,
         "id_number": user_input.id_number,
         "next": "",
         "query": "",
         "current_reasoning": "",
+        "follow_up_needed": False
     }
-    #config = {"configurable": {"thread_id": "1", "recursion_limit": 100}}  
 
-    response = app_graph.invoke(query_data,config={"recursion_limit": 20})
+    thread_id = str(user_input.thread_id)
+
+    response = agent.invoke(state=state,thread_id=thread_id)
     return {"messages": response["messages"]}
