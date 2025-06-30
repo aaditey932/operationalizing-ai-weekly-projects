@@ -1,4 +1,5 @@
-# 🎥 YouTube RAG Chat System
+# 🎥 TubeGist AI
+## YouTube RAG Chat System
 
 > **Ask questions about any YouTube video using AI-powered retrieval!**
 
