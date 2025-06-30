@@ -4,8 +4,9 @@ A sophisticated AI-powered healthcare scheduling system that uses LangGraph's mu
 
 ## 🌐 Live Demo
 
-Try the live application: http://3.86.149.92:8501
-The system is currently deployed on AWS EC2 and ready for testing. Simply enter a user ID (e.g., 1234567) and start chatting with the AI assistant!
+- Try the live application: http://3.86.149.92:8501
+- The system is currently deployed on AWS EC2 and ready for testing. 
+- Simply enter a user ID (e.g., 1234567) and start chatting with the AI assistant!
 
 ## 🚀 What This Project Is
 
