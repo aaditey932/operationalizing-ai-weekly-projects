@@ -3,7 +3,7 @@ import requests
 import uuid
 
 # API Configuration
-API_URL = "http://127.0.0.1:8004/execute"
+API_URL = "http://127.0.0.1:8003/execute"
 
 # Page configuration
 st.set_page_config(page_title="Doctor Appointment Assistant", page_icon="🩺")
