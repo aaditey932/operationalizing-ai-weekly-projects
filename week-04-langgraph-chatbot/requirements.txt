@@ -1,8 +1,0 @@
-faiss-cpu
-langchain_community
-langchain
-langchain_openai
-langchain_tavily
-langgraph
-python-dotenv
-streamlit
