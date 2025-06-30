@@ -2,7 +2,7 @@
 
 > **Ask questions about any YouTube video using AI-powered retrieval!**
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](XYZ)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](YT-RAG-APP)
 
 ## 🌟 Features
 
